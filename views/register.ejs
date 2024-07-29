@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chesssy</title>
+    <link rel="stylesheet" href=<%=url%>/css/output.css>
+</head>
+
+<body class=" h-screen w-full bg-zinc-900">
+    <nav class=" p-3 bg-emerald-600 flex justify-between text-white items-center">
+        <a href="/" class=" text-3xl font-bold mx-10 hover:text-4xl duration-100">Chesssy</a>
+        <div class="flex gap-5 mx-5">
+            <a class="hover:font-bold duration-100" href="/">Home</a>
+            <a class="hover:font-bold duration-100" href="/">Contact</a>
+            <a class="hover:font-bold duration-100" href="/">About US</a>
+        </div>
+    </nav>
+    <main class="flex justify-center my-5">
+        <div class=" bg-zinc-700 flex justify-center w-1/2 rounded-3xl">
+            <div class=" text-white">
+                <h1 class=" text-3xl font-bold m-5">Create Your Account</h1>
+                <form action="/register" method="post" class=" grid gap-2 text-center justify-center">
+                    <label for="fullname" class="text-xl">Name</label>
+                    <input type="text" placeholder="Name" name="fullname"
+                        class=" bg-zinc-600 text-center outline-none h-7">
+                    <label for="fullname" class="text-xl">Userame</label>
+                    <input type="text" placeholder="Username" name="username"
+                        class=" bg-zinc-600 text-center outline-none h-7">
+                    <label for="fullname" class="text-xl">Email</label>
+                    <input type="text" placeholder="Email" name="email"
+                        class=" bg-zinc-600 text-center outline-none h-7">
+                    <label for="fullname" class="text-xl">Age</label>
+                    <input type="number" placeholder="Age" name="age" class=" bg-zinc-600 text-center outline-none h-7">
+                    <label for="fullname" class="text-xl">Password</label>
+                    <input type="password" placeholder="Password" name="password"
+                        class=" bg-zinc-600 text-center outline-none h-7">
+                    <button type="submit" class=" bg-blue-500 rounded-3xl m-2 p-2 font-bold">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
